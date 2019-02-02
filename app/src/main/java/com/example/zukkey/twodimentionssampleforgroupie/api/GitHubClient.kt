@@ -2,7 +2,6 @@ package com.example.zukkey.twodimentionssampleforgroupie.api
 
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Path
 import javax.inject.Inject
 
 class GitHubClient @Inject constructor(
