@@ -1,6 +1,6 @@
 package com.example.zukkey.twodimentionssampleforgroupie.ui.main
 
-import android.arch.lifecycle.AndroidViewModel
+import androidx.lifecycle.AndroidViewModel
 import com.example.zukkey.twodimentionssampleforgroupie.MainApp
 import javax.inject.Inject
 
