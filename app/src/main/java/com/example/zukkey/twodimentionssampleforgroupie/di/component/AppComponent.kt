@@ -8,6 +8,6 @@ import dagger.Component
 
 @Component(modules = [AppModule::class, ClientModule::class])
 interface AppComponent {
-    fun inject(application: MainApp)
-    fun plus(module: MainModule): MainComponent
+  fun inject(application: MainApp)
+  fun plus(module: MainModule): MainComponent
 }

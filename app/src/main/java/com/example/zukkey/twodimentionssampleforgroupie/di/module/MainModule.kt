@@ -12,10 +12,10 @@ class MainModule(
     private val activity: FragmentActivity
 ) {
 
-    @Provides
-    fun provideMainViewModel(
-        factory: MainViewModelFactory
-    ) : MainViewModel {
-        return ViewModelProviders.of(activity, factory).get(MainViewModel::class.java)
-    }
+  @Provides
+  fun provideMainViewModel(
+      factory: MainViewModelFactory
+  ): MainViewModel {
+    return ViewModelProviders.of(activity, factory).get(MainViewModel::class.java)
+  }
 }

@@ -10,17 +10,18 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject lateinit var viewModel: MainViewModel
+  @Inject
+  lateinit var viewModel: MainViewModel
 
-    private val binding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
+  private val binding by lazy {
+    ActivityMainBinding.inflate(layoutInflater)
+  }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-        val component = (application as MainApp).component
-        component.plus(MainModule(this)).inject(this)
-        binding.vm = viewModel
-    }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(binding.root)
+    val component = (application as MainApp).component
+    component.plus(MainModule(this)).inject(this)
+    binding.vm = viewModel
+  }
 }

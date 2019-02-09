@@ -9,11 +9,11 @@ import javax.inject.Inject
 class MainViewModelFactory @Inject constructor(
     private val application: MainApp,
     private val gitHubClient: GitHubClient
-): ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return MainViewModel(
-            application = application,
-            gitHubClient = gitHubClient
-        ) as T
-    }
+) : ViewModelProvider.Factory {
+  override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    return MainViewModel(
+        application = application,
+        gitHubClient = gitHubClient
+    ) as T
+  }
 }

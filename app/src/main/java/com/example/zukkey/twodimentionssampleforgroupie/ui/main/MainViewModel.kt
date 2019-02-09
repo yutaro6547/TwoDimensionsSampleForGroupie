@@ -10,13 +10,13 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     application: MainApp,
     private val gitHubClient: GitHubClient
-): AndroidViewModel(application) {
+) : AndroidViewModel(application) {
 
-    override fun onCleared() {
-        super.onCleared()
-    }
+  override fun onCleared() {
+    super.onCleared()
+  }
 
-    fun getGitHubUser(): Observable<List<GitHubUser>> {
-        return gitHubClient.getTargetUser()
-    }
+  fun getGitHubUser(): Observable<List<GitHubUser>> {
+    return gitHubClient.getTargetUser()
+  }
 }
