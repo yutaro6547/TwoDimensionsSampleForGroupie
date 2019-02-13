@@ -1,7 +1,8 @@
 package com.example.zukkey.twodimentionssampleforgroupie.ui.main
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+
+import android.arch.lifecycle.ViewModel
+import android.arch.lifecycle.ViewModelProvider
 import com.example.zukkey.twodimentionssampleforgroupie.MainApp
 import com.example.zukkey.twodimentionssampleforgroupie.api.GitHubClient
 import javax.inject.Inject
