@@ -34,7 +34,8 @@ class MainModule(
     }
 
     @Singleton
-    @Provides fun provideGitHubService(retrofit: Retrofit) : GitHubClient.GitHubService {
+    @Provides
+    fun provideGitHubService(retrofit: Retrofit) : GitHubClient.GitHubService {
         return retrofit.create(GitHubClient.GitHubService::class.java)
     }
 }
