@@ -1,6 +1,6 @@
 package com.example.zukkey.twodimentionssampleforgroupie.ui.main
 
-import android.arch.lifecycle.AndroidViewModel
+import androidx.lifecycle.AndroidViewModel
 import com.example.zukkey.twodimentionssampleforgroupie.MainApp
 import com.example.zukkey.twodimentionssampleforgroupie.api.GitHubClient
 import com.example.zukkey.twodimentionssampleforgroupie.api.GitHubUser

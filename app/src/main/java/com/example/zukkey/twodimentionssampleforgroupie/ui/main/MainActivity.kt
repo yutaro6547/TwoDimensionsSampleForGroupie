@@ -1,8 +1,8 @@
 package com.example.zukkey.twodimentionssampleforgroupie.ui.main
 
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.zukkey.twodimentionssampleforgroupie.MainApp
 import com.example.zukkey.twodimentionssampleforgroupie.R
 import com.example.zukkey.twodimentionssampleforgroupie.databinding.ActivityMainBinding
